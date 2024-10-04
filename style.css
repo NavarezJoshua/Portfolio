@@ -1,0 +1,330 @@
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #FBF9F1;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+#myresume{
+    width: 80%;
+    height: 975px;
+    margin-left: 150px;
+    display: flex;
+}
+
+.resume1{
+    background-color: #333;
+}
+
+.grad-container img{
+    width: min(30rem, 80%);
+    border-radius: 30%;
+    margin-top: 120px;
+    padding: 15px;
+    display: block;
+    
+}
+
+.grad-container{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.container button{
+    padding: 9px;
+    margin-top: 0;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #333;
+}
+
+.resume{
+    background-color: #fff;
+    color: #333 ;
+}
+
+.resume:hover{
+    color: #fff;
+    background-color: #333;
+}
+
+.hire-me{
+    background-color: #fff;
+    color: #333;
+}
+
+.hire-me:hover{
+    color: #fff;
+    background-color: #555;
+}
+
+#main-header{
+    background-color: teal;
+    color: #f4f4f4;
+}
+
+/* #navbar{
+    background-color: #333;
+    color: #fff; 
+    position: fixed;
+    width: 100%;
+}
+
+#navbar ul{
+    list-style: none;
+    float: right;
+    padding-right: 20px;
+
+}
+
+#navbar li{
+    display: inline-block;
+    padding-right: 20px;
+
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+} */
+
+.container h1{
+    margin-top: 70px;
+    margin-bottom: 0;
+    display: flex;
+}
+
+.container p{
+    margin-top: 100px;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+/* ul li a{
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: red;
+    transition: 0.3s;
+}
+
+ul li a:hover{
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    color: #fff;
+} */
+
+
+ #showcase{
+    background-image: url(img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+} 
+
+ #showcase h1{
+    color: #fff;
+    font-size: 35px;
+    line-height: 1.6em;
+    padding-top: 0;
+
+} 
+
+
+
+#main{
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+
+#main-footer{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 140px;
+
+
+}
+
+#main-footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin:0;
+    padding: 0;
+}
+
+#main-footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#main-footer i{
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.main-contents{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    border: 2px solid black;
+    grid-auto-flow: dense;
+    padding-top: 20px;
+}
+
+.contents{
+    grid-column-start: 2;
+}
+
+.content-left{
+    grid-column-start: 1;
+}
+
+.content-right{
+    grid-column-start: 3;
+}
+
+nav{
+    background: #333;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active,a:hover{
+    background: #fff;
+    color: #333;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #555;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    a:hover,a.active{
+        background: #fff;
+        color:#555;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+@media(max-width: 600px){
+
+    #main{
+        width: 100%;
+        float: none;
+    }
+
+    #sidebar{
+        width: 100%;
+        float: none;
+    }
+}
+
